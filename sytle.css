@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Mali:wght@300&display=swap');
+
+:root{
+    --green:#27ae60;
+    --black:#192a56;
+    --light-color:#666;
+    --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+}
+
+
+*{
+    box-sizing: border-box;
+    font-family: 'Mali', cursive;
+    align-items: center;
+    text-decoration: none;
+    
+}
+
+body{
+    background-color: antiquewhite;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.bg-container{
+    margin-top: 1cm;
+    text-align: center;
+    display: inline-block;
+    width: 50%;
+}
+.bg0{
+    align-items: center;
+    justify-content: center;
+}
+.bg-container .bg0 .imga .img{
+    align-items: center;
+    width: 150px;
+    height: 150px;
+}
+
+.tr {
+    background-color: white;
+    width: 45%;
+    text-align: center;
+    margin: auto;
+    height: 1.5cm;
+    padding-top:1px;
+    margin-top: 1cm;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.tr:hover{
+    background: gold;
+    letter-spacing: .1rem;
+    border: solid whitesmoke;
+}
+.imga .img{
+    width: 300px;
+    height: 250px;
+    border-radius: 150px;
+}
+
+.tr i{
+    padding-bottom: 1px;
+}
+
+.tr .o{
+    text-align: center;
+    align-items: center;
+}
+
+.bg-container .bg0 .tr{
+    align-items: center;
+}
+.image img{
+    width: 50%;
+    height: 650px;
+    margin-bottom: 0.5cm;
+    margin-top: 3cm;
+}
+.ttr{
+    background-color: white;
+    height: 130px;
+    margin-bottom: 1cm;
+    border-radius: 25px;
+    padding-top: 2px;
+    width: 8cm;
+    
+}
+.container .t{
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+    background-color: wheat;
+    width: 20%;
+    text-align: center;
+    display: inline-block;
+    height: 0.8cm;
+    padding: 5px;
+    border-radius: 50px;
+}
+
+.ttr .container .menu p{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3cm;
+}
+
+header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background: #fff;
+    padding: 1rem 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: var(--box-shadow);
+}
+
+header .logo{
+    color: var(--black);
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+
+header .logo i{
+    color: var(--green);
+}
+
+header .navbar a{
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    color: var(--light-color);
+}
+
+header .navbar a.active,
+header .navbar a:hover{
+    color: #fff;
+    background: #04ff00;
+}
+
+@media (max-width: 768px) {
+    .tr {
+      font-size: 14px;
+      width: 5cm;
+    }
+
+    header .navbar a{
+        font-size: 11px;
+        border-radius: .5rem;
+        background-color: #04ff00;
+        padding-left: 0.2cm;
+    }
+    header .logo{
+        font-size: 13px;
+    }
+    .image img{
+        width: 50%;
+        height: 350px;
+        margin-bottom: 0.5cm;
+        margin-top: 3cm;
+    }
+  }
